@@ -125,7 +125,7 @@
                         <i class="fa fa-bars"></i>
                     </a>
                     <a href="{{ url('/') }}">
-                        <img class="img-fluid" src=" {{ asset('images/logos/logo_global_menu.png') }}" alt="Logo">
+                        <img class="img-fluid" src=" {{ asset('images/logos/logo_menu.jpg') }}" alt="Logo">
                     </a>
                     <a class="mobile-options">
                         <i class="feather icon-more-horizontal"></i>
