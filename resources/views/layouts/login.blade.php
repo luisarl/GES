@@ -64,12 +64,12 @@
       <div class="card login-card">
         <div class="row no-gutters">
           <div class="col-md-8">
-            <img src="{{ asset('images/logos/AceroNetPortal-1.png') }}" alt="login" class="login-card-img">
+            <img src="{{ asset('images/logos/bg_login.jpg') }}" alt="login" class="login-card-img">
           </div>
           <div class="col-md-4">
             <div class="card-body">
               <div class="brand-wrapper">
-                <img src="{{ asset('images/logos/logo_global.png')}}" alt="logo" class="logo">
+                <img src="{{ asset('images/logos/logo.jpg')}}" alt="logo" class="logo">
                   <p class="login-card-description">{{config('app.name')}}</p>
               </div>
               
