@@ -16,7 +16,7 @@
 @section('contenido')
 
 <div class="row">
-    <div class="col-xl-4 col-md-6">
+    {{-- <div class="col-xl-4 col-md-6">
         <div class="card social-card bg-primary">
             <div class="card-block">
                 <div class="row align-items-center">
@@ -32,9 +32,9 @@
             </div>
             <a href="{{ route('articulos.index') }}" class="download-icon"><i class="fa fa-link"></i></a>
         </div>
-    </div>
+    </div> --}}
 
-    <div class="col-xl-4 col-md-6">
+    {{-- <div class="col-xl-4 col-md-6">
         <div class="card social-card bg-success">
             <div class="card-block">
                 <div class="row align-items-center">
@@ -50,17 +50,17 @@
             </div>
             <a href="{{ route('autorizacionsalidas.index') }}" class="download-icon"><i class="fa fa-link"></i></a>
         </div>
-    </div>
+    </div> --}}
 
     <div class="col-xl-4 col-md-6">
-        <div class="card social-card bg-info">
+        <div class="card social-card bg-primary">
             <div class="card-block">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <i class="icofont icofont-ui-clip-board f-34 text-info social-icon"></i>
+                        <i class="icofont icofont-ui-clip-board f-34 text-primary social-icon"></i>
                     </div>
                     <div class="col">
-                        <h4 class="m-b-0">Solicitudes de Servicios</h4>
+                        <h4 class="m-b-0">GESServicios</h4>
                         <p>Solicitudes</p>
                         <h2 class="m-b-0">{{ $solicitudes }}</h2>
                     </div>
@@ -79,7 +79,7 @@
                         {{-- <i class="icofont icofont-tools-alt-2 "></i> --}}
                     </div>
                     <div class="col">
-                        <h4 class="m-b-0">Control de Herramientas</h4>
+                        <h4 class="m-b-0">GESHerramientas</h4>
                         <p>Despachos</p>
                         <h2 class="m-b-0">{{ $despachos }}</h2>
                     </div>
@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <div class="col-xl-4 col-md-6">
+    {{-- <div class="col-xl-4 col-md-6">
         <div class="card social-card bg-danger">
             <div class="card-block">
                 <div class="row align-items-center">
@@ -105,17 +105,17 @@
             </div>
             <a href="{{ route('proveedores.index') }}" class="download-icon"><i class="fa fa-link "></i></a>
         </div>
-    </div>
+    </div> --}}
 
     <div class="col-xl-4 col-md-6">
-        <div class="card social-card bg-primary">
+        <div class="card social-card bg-info">
             <div class="card-block">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <i class="fa fa-archive f-34 text-primary social-icon"></i>
+                        <i class="fa fa-archive f-34 text-info social-icon"></i>
                     </div>
                     <div class="col">
-                        <h4 class="m-b-0">Activos</h4>
+                        <h4 class="m-b-0">GESActivos</h4>
                         <p>Activos</p>
                         <h2 class="m-b-0">{{ $activos }}</h2>
                     </div>
@@ -125,7 +125,7 @@
         </div>
     </div>
 
-    <div class="col-xl-4 col-md-6">
+    {{-- <div class="col-xl-4 col-md-6">
         <div class="card social-card bg-success">
             <div class="card-block">
                 <div class="row align-items-center">
@@ -141,10 +141,10 @@
             </div>
             <a href="{{ route('resgresguardos.index') }}" class="download-icon"><i class="fa fa-link"></i></a>
         </div>
-    </div>
+    </div> --}}
 
 
-    <div class="col-xl-4 col-md-6">
+    {{-- <div class="col-xl-4 col-md-6">
         <div class="card social-card bg-info">
             <div class="card-block">
                 <div class="row align-items-center">
@@ -160,15 +160,14 @@
             </div>
             <a href="{{ route('cencconap.index') }}" class="download-icon"><i class="fa fa-link"></i></a>
         </div>
-    </div>
+    </div> --}}
 
-    <div class="col-xl-4 col-md-6">
+    {{-- <div class="col-xl-4 col-md-6">
         <div class="card social-card bg-warning">
             <div class="card-block">
                 <div class="row align-items-center">
                     <div class="col-auto">
                         <i class="icofont icofont-document-search f-34 text-warning social-icon"></i>
-                        {{-- <i class="icofont icofont-tools-alt-2 "></i> --}}
                     </div>
                     <div class="col">
                         <h4 class="m-b-0">Auditoria</h4>
@@ -179,17 +178,17 @@
             </div>
             <a href="{{ route('audiauditoriainventario.index') }}" class="download-icon"><i class="fa fa-link"></i></a>
         </div>
-    </div>
+    </div> --}}
 
     <div class="col-xl-4 col-md-6">
-        <div class="card social-card bg-danger">
+        <div class="card social-card bg-success">
             <div class="card-block">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <i class="fa fa-calendar-check-o f-34 text-danger social-icon"></i>
+                        <i class="fa fa-calendar-check-o f-34 text-success social-icon"></i>
                     </div>
                     <div class="col">
-                        <h4 class="m-b-0">Gestion Asistencia</h4>
+                        <h4 class="m-b-0">GesAsistencia</h4>
                         <p>Validaciones</p>
                         <h2 class="m-b-0">{{$asistencias}}</h2>
                     </div>
@@ -200,14 +199,14 @@
     </div>
 
     <div class="col-xl-4 col-md-6">
-        <div class="card social-card bg-primary">
+        <div class="card social-card bg-danger">
             <div class="card-block">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <i class="zmdi zmdi-local-gas-station f-34 text-primary social-icon"></i>
+                        <i class="zmdi zmdi-local-gas-station f-34 text-danger social-icon"></i>
                     </div>
                     <div class="col">
-                        <h4 class="m-b-0">Control Combustible</h4>
+                        <h4 class="m-b-0">GESCombustible</h4>
                         <p>Despachos</p>
                         <h2 class="m-b-0">{{$despachoscombustible}}</h2>
                     </div>
@@ -217,7 +216,7 @@
         </div>
     </div>
 
-    <div class="col-xl-4 col-md-6">
+    {{-- <div class="col-xl-4 col-md-6">
         <div class="card social-card bg-success">
             <div class="card-block">
                 <div class="row align-items-center">
@@ -233,8 +232,9 @@
             </div>
             <a href="{{ route('cnttcontroltoner.index') }}" class="download-icon"><i class="fa fa-link "></i></a>
         </div>
-    </div>
-    <div class="col-xl-4 col-md-6">
+    </div> --}}
+
+    {{-- <div class="col-xl-4 col-md-6">
         <div class="card social-card bg-info">
             <div class="card-block">
                 <div class="row align-items-center">
@@ -250,7 +250,7 @@
             </div>
             <a href="{{ route('embaembarcaciones.index') }}" class="download-icon"><i class="fa fa-link"></i></a>
         </div>
-    </div>
+    </div> --}}
 
     <div class="col-xl-4 col-md-6">
         <div class="card social-card bg-inverse">

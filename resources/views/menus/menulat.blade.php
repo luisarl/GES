@@ -10,21 +10,20 @@
                 </a>
             </li>
             <!-- Inicio de Ficha Tecnica  -->
-            @can('menu.fichatecnica')
-                <li
-                    class="pcoded-hasmenu {{ request()->is('dashboardfict','articulos' , 'ubicacionesarticulos' , 'articulosubicaciones/create' , 'grupos' , 'subgrupos', 'categorias', 'clasificaciones', 'unidades', 'subclasificaciones') ? 'pcoded-trigger' : '' }}">
+            {{-- @can('menu.fichatecnica')
+                <li class="pcoded-hasmenu {{ request()->is('dashboardfict','articulos' , 'ubicacionesarticulos' , 'articulosubicaciones/create' , 'grupos' , 'subgrupos', 'categorias', 'clasificaciones', 'unidades', 'subclasificaciones') ? 'pcoded-trigger' : '' }}">
                     <a href="javascript:void(0)">
                         <span class="pcoded-micon"><i class="fa fa-list"></i></span>
                         <span class="pcoded-mtext">Ficha Tecnica</span>
                     </a>
                     <ul class="pcoded-submenu">
-                        {{-- Dashboard Ficha Tecnica --}}
+                      
                         <li class="{{ request()->is('dashboardfict') ? 'active' : '' }}">
                             <a href="{{ route('dashboardfict') }}">
                                 <span class="pcoded-mtext"><i class="fa fa-dashboard">&nbsp;</i> Dashboard</span>
                             </a>
                         </li>
-                        <!--Articulos modulo Ficha Tecnica-->
+                        
                         @can('fict.articulos.inicio')
                             <li class="{{ request()->is('articulos') ? 'active' : '' }}">
                                 <a href="{{ route('articulos.index') }}">
@@ -47,7 +46,7 @@
                             </a>
                         </li>
                         @endcan
-                        <!--Grupos modulo Ficha Tecnica-->
+                        
                         @can('fict.grupos.inicio')
                             <li class="{{ request()->is('grupos') ? 'active' : '' }}">
                                 <a href="{{ route('grupos.index') }}">
@@ -55,7 +54,7 @@
                                 </a>
                             </li>
                         @endcan
-                        <!--Subgrupos modulo Ficha Tecnica-->
+                        
                         @can('fict.subgrupos.inicio')
                             <li class="{{ request()->is('subgrupos') ? 'active' : '' }}">
                                 <a href="{{ route('subgrupos.index') }}">
@@ -63,7 +62,7 @@
                                 </a>
                             </li>
                         @endcan
-                        <!--Categorias modulo Ficha Tecnica-->
+                       
                         @can('fict.categorias.inicio')
                             <li class="{{ request()->is('categorias') ? 'active' : '' }}">
                                 <a href="{{ route('categorias.index') }}">
@@ -71,7 +70,7 @@
                                 </a>
                             </li>
                         @endcan
-                        <!--Clasificaciones modulo Ficha Tecnica-->
+                        
                         @can('fict.clasificaciones.inicio')
                             <li class="{{ request()->is('clasificaciones') ? 'active' : '' }}">
                                 <a href="{{ route('clasificaciones.index') }}">
@@ -79,7 +78,7 @@
                                 </a>
                             </li>
                         @endcan
-                        <!--Subclasificaciones modulo Ficha Tecnica-->
+                        
                         @can('fict.subclasificaciones.inicio')
                             <li class="{{ request()->is('subclasificaciones') ? 'active' : '' }}">
                                 <a href="{{ route('subclasificaciones.index') }}">
@@ -87,7 +86,7 @@
                                 </a>
                             </li>
                         @endcan
-                        <!--Unidades modulo Ficha Tecnica-->
+                       
                         @can('fict.unidades.inicio')
                             <li class="{{ request()->is('unidades') ? 'active' : '' }}">
                                 <a href="{{ route('unidades.index') }}">
@@ -98,7 +97,7 @@
                         @endcan
                     </ul>
                 </li>
-            @endcan
+            @endcan --}}
             <!-- Fin de Ficha Tecnica  -->
 
             <!-- Inicio de Activos  -->
@@ -106,7 +105,7 @@
                 <li class="pcoded-hasmenu {{ request()->is('activos', 'tiposactivos', 'subtiposactivos', 'caracteristicasactivos', 'estadosactivos') ? 'pcoded-trigger' : '' }}">
                     <a href="javascript:void(0)">
                         <span class="pcoded-micon"><i class="fa fa-archive"></i></span>
-                        <span class="pcoded-mtext">Activos</span>
+                        <span class="pcoded-mtext">GESActivos</span>
                     </a>
                     <ul class="pcoded-submenu">
                         @can('actv.activos.inicio')
@@ -150,7 +149,7 @@
             <!-- Fin de Activos  -->
 
             <!-- Inicio de Compras  -->
-            @can('menu.compras')
+            {{-- @can('menu.compras')
                 <li class="pcoded-hasmenu {{ request()->is('proveedores', 'zonas', 'tiposproveedor', 'segmentos', 'compactualizarpreciosoc/create') ? 'pcoded-trigger' : '' }}">
                     <a href="javascript:void(0)">
                         <span class="pcoded-micon"><i class="fa fa-cart-arrow-down"></i></span>
@@ -198,10 +197,10 @@
                         @endcan
                     </ul>
                 </li>
-            @endcan
+            @endcan --}}
             <!-- Fin de Compras  -->
             
-            @can('menu.autorizacionsalidas')
+            {{-- @can('menu.autorizacionsalidas')
                 <!-- Inicio de Salidas de Materiales  -->
                 <li class="pcoded-hasmenu {{ request()->is('vehiculos' , 'autorizacionsalidas', 'asaltipos', 'asalsubtipos') ? 'pcoded-trigger' : '' }}">
                     <a href="javascript:void(0)">
@@ -240,13 +239,13 @@
                     </ul>
                 </li>
                 <!-- Fin de Salidas de Materiales  -->
-            @endcan
+            @endcan --}}
             <!-- Inicio de Control de Herramientas -->
             @can('menu.controlherramientas')
                 <li class="pcoded-hasmenu {{ request()->is('inventarios', 'dashboardcnth' ,'herramientas', 'plantillas','despachos', 'entradas', 'salidas') ? 'pcoded-trigger' : '' }}">
                     <a href="javascript:void(0)">
                         <span class="pcoded-micon"><i class="icofont icofont-tools-alt-2"></i></span>
-                        <span class="pcoded-mtext">Control de Herramientas </span>
+                        <span class="pcoded-mtext">GESHerramientas </span>
                     </a>
                     <ul class="pcoded-submenu">
                         <!--Dashboard modulo Control Herramienta-->
@@ -399,7 +398,7 @@
                 <li class="pcoded-hasmenu {{ request()->is('dashboardsols', 'solicitudes', 'servicios', 'subservicios', 'responsables') ? 'pcoded-trigger' : '' }}">
                     <a href="javascript:void(0)">
                         <span class="pcoded-micon"><i class="icofont icofont-ui-clip-board"></i></span>
-                        <span class="pcoded-mtext">Solicitudes de Servicio</span>
+                        <span class="pcoded-mtext">GESServicios</span>
                     </a>
                     <ul class="pcoded-submenu">
                         <!--Dashboard modulo Solicitudes Servicios-->
@@ -445,14 +444,14 @@
             <!-- Fin Solicitudes de Servicio  -->
 
             <!-- Inicio de Centro de Corte  -->
-            @can('menu.centrocorte')
+            {{-- @can('menu.centrocorte')
                 <li class="pcoded-hasmenu {{ request()->is('dashboardceco', 'cencfichas', 'cencequipos','cencequipos', 'cencresponsables','cencaprovechamientos','cencconap','cenclistapartes','cencconsumibles', 'cencordentrabajo','cenctablasconsumo','cenctiposfichas','cenccaracteristicastiposfichas') ? 'pcoded-trigger' : '' }}">
                     <a href="javascript:void(0)">
                         <span class="pcoded-micon"><i class="fa fa-object-ungroup"></i></span>
                         <span class="pcoded-mtext">Centro de Corte</span>
                     </a>
                     <ul class="pcoded-submenu">
-                        <!--Dashboard modulo Solicitudes Servicios-->
+                       
                         @can('cenc.conap.inicio')
                         <li class="{{ request()->is('cencconap') ? 'active' : '' }}">
                             <a href="{{ route('cencconap.index') }}">
@@ -480,7 +479,7 @@
                                 <span class="pcoded-mtext"><i class="fa fa-file-text-o">&nbsp;</i> Orden de trabajo </span>
                             </a>
                             <ul class="pcoded-submenu">
-                                {{-- centro de cortes fichas  --}}
+                                
                                <li class="{{ request()->is('cencordentrabajo') ? 'active' : '' }}">
                                    <a href="{{ route('cencordentrabajo.index') }}">
                                        <span class="pcoded-mtext"><i class="fa fa-file-text-o">&nbsp;</i> Orden</span>
@@ -506,7 +505,7 @@
                                 <span class="pcoded-mtext"><i class="fa fa-file-text-o">&nbsp;</i> Fichas Tecnicas</span>
                             </a>
                             <ul class="pcoded-submenu">
-                                 {{-- centro de cortes fichas  --}}
+                               
                                 <li class="{{ request()->is('cencfichas') ? 'active' : '' }}">
                                     <a href="{{ route('cencfichas.index') }}">
                                         <span class="pcoded-mtext"><i class="fa fa-file-text-o">&nbsp;</i> Fichas</span>
@@ -559,14 +558,14 @@
                                 <span class="pcoded-mtext"><i class="fa fa-users">&nbsp;</i> Responsables</span>
                             </a>
                         </li>
-                        @endcan --}}
+                        @endcan
                     </ul>
                 </li>
-            @endcan
+            @endcan --}}
             <!-- Fin Centro de Corte -->
 
             {{-- Inicio Resguardo --}}
-            @can('menu.resguardo')
+            {{-- @can('menu.resguardo')
                 <li class="pcoded-hasmenu {{ request()->is('resgresguardos','resgsolicitudes', 'resgdespachos', 'resgdesincorporaciones', 'resgclasificaciones', 'resgubicaciones') ? 'pcoded-trigger' : '' }}">
                     <a href="javascript:void(0)">
                         <span class="pcoded-micon"><i class="fa fa-briefcase"></i></span>
@@ -618,7 +617,7 @@
                         @endcan
                     </ul>
                 </li>
-            @endcan    
+            @endcan     --}}
             {{-- Fin Resguardo --}}
 
             {{-- Inicio Gestion Asistencia --}}
@@ -627,7 +626,7 @@
             'gstaasistenciasvalidaciones/create', 'gstalistadovalidaciones') ? 'pcoded-trigger' : '' }}">
                 <a href="javascript:void(0)">
                     <span class="pcoded-micon"><i class="fa fa-calendar-check-o"></i></span>
-                    <span class="pcoded-mtext">Gestion Asistencia</span>
+                    <span class="pcoded-mtext">GESAsistencia</span>
                 </a>
                 <ul class="pcoded-submenu">
                     {{-- @can('resg.resguardos.inicio') --}}
@@ -689,7 +688,7 @@
                 
             {{-- Fin Gestion Asistencia --}}
             {{-- Inicio Auditoria --}}
-            @can('menu.auditoria')
+            {{-- @can('menu.auditoria')
                 <li class="pcoded-hasmenu {{ request()->is('audiauditoriainventario') ? 'pcoded-trigger' : '' }}">
                     <a href="javascript:void(0)">
                         <span class="pcoded-micon"><i class="icofont icofont-document-search"></i></span>
@@ -705,7 +704,7 @@
                         @endcan
                     </ul>
                 </li>
-            @endcan    
+            @endcan     --}}
             {{-- Fin Auditoria --}}
 
             {{-- Inicio Control Combustible --}}
@@ -713,7 +712,7 @@
             <li class="pcoded-hasmenu {{ request()->is('cntcdashboard', 'cntcdespachos', 'cntcingresos', 'cntctiposingresos', 'cntctiposcombustible') ? 'pcoded-trigger' : '' }}">
                 <a href="javascript:void(0)">
                     <span class="pcoded-micon"><i class="zmdi zmdi-local-gas-station"></i></span>
-                    <span class="pcoded-mtext">Control Combustible</span>
+                    <span class="pcoded-mtext">GESCombustible</span>
                 </a>
                 <ul class="pcoded-submenu">
                     @can('cntc.dashboard')
@@ -758,7 +757,7 @@
                 
             {{-- Fin Control Combustible --}}
             {{-- Inicio Control Toner --}}
-            @can('menu.controltoner')
+            {{-- @can('menu.controltoner')
             <li class="pcoded-hasmenu {{ request()->is('cnttcontroltoner','cnttdashboard') ? 'pcoded-trigger' : '' }}">
                 <a href="javascript:void(0)">
                     <span class="pcoded-micon"><i class="zmdi zmdi-print"></i></span>
@@ -781,11 +780,11 @@
                 @endcan 
                 </ul>
             </li>
-            @endcan
+            @endcan --}}
                 
             {{-- Fin Control Toner --}}
             {{-- Inicio Embarcaciones --}}
-            @can('menu.embarcaciones')
+            {{-- @can('menu.embarcaciones')
             <li class="pcoded-hasmenu {{ request()->is('emba.dashboard','embaregistrosparametros','embanovedades','embamaquinas','embaembarcaciones','embaparametros','embaunidades') ? 'pcoded-trigger' : '' }}">
                 <a href="javascript:void(0)">
                     <span class="pcoded-micon"><i class="zmdi zmdi-boat"></i></i></span>
@@ -843,7 +842,7 @@
                     @endcan 
                 </ul>
             </li>
-            @endcan
+            @endcan --}}
             {{-- Fin Embarcaciones --}}
 
             <!-- Inicio de Reportes  -->
